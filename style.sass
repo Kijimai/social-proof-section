@@ -1,0 +1,39 @@
+:root
+  --social-proof-bg-color: #512051
+  --color-white: #fff
+
+html
+  font-size: 10px
+
+*,
+*::after,
+*::before
+  margin: 0
+  padding: 0
+  box-sizing: inherit
+
+body
+  background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg')
+  background-repeat: no-repeat
+  font-family: 'Spartan', sans-serif
+
+main
+  max-width: 90%
+  margin: 0 auto
+
+.social-proof-container
+  display: flex
+  flex-direction: column
+  gap: 1.6rem
+
+.social-proof
+  display: flex
+  flex-direction: column
+  background-color: var(--social-proof-bg-color)
+  color: var(--color-white)
+  padding: 3.2rem
+  border-radius: 0.8rem
+  .avatar
+    border-radius: 50%
+
+/*# sourceMappingURL=style.sass.map */
