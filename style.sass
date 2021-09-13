@@ -13,13 +13,27 @@ html
   box-sizing: inherit
 
 body
-  background-image: url('images/bg-pattern-top-mobile.svg'), url('images/bg-pattern-bottom-mobile.svg')
-  background-repeat: no-repeat
+  background: url('images/bg-pattern-top-mobile.svg') no-repeat left top, url('images/bg-pattern-bottom-mobile.svg') no-repeat right bottom
   font-family: 'Spartan', sans-serif
 
 main
   max-width: 90%
   margin: 0 auto
+
+header 
+  text-align: center
+  margin: 8rem 2.4rem 4rem
+  .top-header
+    color: var(--social-proof-bg-color)
+    font-weight: 700
+    font-size: 3.2rem
+    margin-bottom: 1.8rem
+  .bottom-header
+    font-size: 1.5rem
+    color: #927b91
+    font-weight: 500
+    line-height: 1.5
+    transform-origin: center
 
 .social-proof-container
   display: flex
