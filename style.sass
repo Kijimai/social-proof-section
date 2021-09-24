@@ -4,6 +4,7 @@
 
 html
   font-size: 10px
+  box-sizing: border-box
 
 *,
 *::after,
@@ -35,19 +36,47 @@ header
     line-height: 1.5
     transform-origin: center
 
+.ratings-section
+  display: flex
+  flex-direction: column
+  gap: 1.6rem
+  margin: 4rem 0
+  .rated-box
+    border-radius: 0.8rem
+    text-align: center
+    background-color: #f7f2f7
+    padding: 1.6rem 0
+    .star-box
+      margin-bottom: 1.6rem
+  .rating-src
+    font-size: 1.3rem
+    color: #512051
+
 .social-proof-container
   display: flex
   flex-direction: column
   gap: 1.6rem
+  .social-proof
+    display: flex
+    flex-direction: column
+    background-color: var(--social-proof-bg-color)
+    color: var(--color-white)
+    padding: 3.2rem
+    border-radius: 0.8rem
+    .user-profile
+      display: flex
+      align-items: center
+      gap: 2.3rem
+      .avatar
+        height: 4rem
+        width: 4rem
+        border-radius: 50%
+      .user-info
+        line-height: 1.4
+        .buyer-status
+          color: #ee69a4
+          font-weight: 400
 
-.social-proof
-  display: flex
-  flex-direction: column
-  background-color: var(--social-proof-bg-color)
-  color: var(--color-white)
-  padding: 3.2rem
-  border-radius: 0.8rem
-  .avatar
-    border-radius: 50%
+
 
 /*# sourceMappingURL=style.sass.map */
