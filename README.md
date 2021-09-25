@@ -16,8 +16,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Kijimai/social-proof-section)
-- Live Site URL: [Add live site URL here](https://kijimai.github.io/social-proof-section/)
+- Solution URL: [Github](https://github.com/Kijimai/social-proof-section)
+- Live Site URL: [https://kijimai.github.io/social-proof-section/](https://kijimai.github.io/social-proof-section/)
 
 ## My process
 
