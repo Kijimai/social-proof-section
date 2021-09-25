@@ -19,57 +19,141 @@ html {
 body {
   background: url("images/bg-pattern-top-mobile.svg") no-repeat left top, url("images/bg-pattern-bottom-mobile.svg") no-repeat right bottom;
   font-family: "Spartan", sans-serif;
+  min-height: 100vh;
 }
 
+@media screen and (min-width: 768px) {
+  body {
+    background: url("images/bg-pattern-top-desktop.svg") no-repeat left top, url("images/bg-pattern-bottom-desktop.svg") no-repeat right bottom;
+  }
+}
 main {
   max-width: 90%;
   margin: 0 auto;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+main {
+  height: 100%;
+  max-width: 80vw;
+}
+
 header {
   text-align: center;
-  margin: 8rem 2.4rem 4rem;
+  padding-top: 8rem;
+  padding-bottom: 4rem;
 }
 header .top-header {
   color: var(--social-proof-bg-color);
   font-weight: 700;
   font-size: 3.2rem;
+  margin: 0 2.4rem;
   margin-bottom: 1.8rem;
 }
 header .bottom-header {
+  margin: 0 auto;
+  width: 35rem;
   font-size: 1.5rem;
   color: #927b91;
   font-weight: 500;
   line-height: 1.5;
-  transform-origin: center;
 }
-
-.ratings-section {
+header .ratings-section {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
-  margin: 4rem 0;
+  margin: 4rem 2.4rem;
 }
-.ratings-section .rated-box {
+header .ratings-section .rated-box {
   border-radius: 0.8rem;
   text-align: center;
   background-color: #f7f2f7;
   padding: 1.6rem 0;
 }
-.ratings-section .rated-box .star-box {
+header .ratings-section .rated-box .star-box {
   margin-bottom: 1.6rem;
 }
-.ratings-section .rating-src {
+header .ratings-section .rating-src {
   font-size: 1.3rem;
   color: #512051;
 }
 
+@media screen and (min-width: 768px) {
+  header {
+    text-align: left;
+    margin: 0 auto;
+    padding: 12.7rem auto 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 85vw;
+  }
+  header .main-header {
+    max-width: 48rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+  header .main-header .top-header,
+header .main-header .bottom-header {
+    margin: 0 0 0.6rem;
+  }
+  header .main-header .top-header {
+    font-size: 4rem;
+    max-width: 40rem;
+  }
+  header .main-header .bottom-header {
+    width: 100%;
+    line-height: 1.6;
+  }
+  header .ratings-section {
+    width: 100%;
+    margin: 0;
+  }
+  header .ratings-section .rated-box {
+    display: inline-block;
+    padding: 2rem;
+  }
+  header .ratings-section .rated-box:nth-of-type(1) {
+    align-self: start;
+  }
+  header .ratings-section .rated-box:nth-of-type(2) {
+    align-self: center;
+  }
+  header .ratings-section .rated-box:nth-of-type(3) {
+    align-self: end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  header,
+main {
+    max-width: 70vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .rated-box {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 44.5rem;
+  }
+  .rated-box .star-box {
+    margin-bottom: 0 !important;
+  }
+}
 .social-proof-container {
   display: flex;
   flex-direction: column;
   gap: 1.6rem;
 }
 .social-proof-container .social-proof {
+  min-height: 24.8rem;
   display: flex;
   flex-direction: column;
   background-color: var(--social-proof-bg-color);
@@ -81,6 +165,7 @@ header .bottom-header {
   display: flex;
   align-items: center;
   gap: 2.3rem;
+  margin-bottom: 2.6rem;
 }
 .social-proof-container .social-proof .user-profile .avatar {
   height: 4rem;
@@ -94,7 +179,37 @@ header .bottom-header {
   color: #ee69a4;
   font-weight: 400;
 }
+.social-proof-container .social-proof .user-review {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  font-family: "Spartan", sans-serif;
+}
 
+@media screen and (min-width: 768px) {
+  .social-proof-container {
+    flex-direction: row;
+    min-height: 30vh;
+  }
+  .social-proof-container .social-proof {
+    max-width: 35rem;
+  }
+  .social-proof-container .social-proof:nth-of-type(1) {
+    align-self: flex-start;
+  }
+  .social-proof-container .social-proof:nth-of-type(2) {
+    align-self: center;
+  }
+  .social-proof-container .social-proof:nth-of-type(3) {
+    align-self: flex-end;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .social-proof {
+    margin: 0 auto;
+    display: flex;
+    min-width: 35rem;
+  }
+}
 /*# sourceMappingURL=style.sass.map */
 
 /*# sourceMappingURL=style.css.map */
